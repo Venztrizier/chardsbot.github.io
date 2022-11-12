@@ -1,0 +1,663 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#music {
+      grid-column: 2;
+      position: relative;
+      z-index: 1000;
+      opacity: .4;
+}
+#snowflakeContainer {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+			cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+        }
+        
+        .snowflake {
+            padding-left: 15px;
+            font-size: 14px;
+            line-height: 24px;
+            position: fixed;
+            color: #ebebeb;
+            user-select: none;
+            z-index: 1000;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+			cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+        }
+        
+        .snowflake:hover {
+            cursor: default;
+			cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+        }
+
+
+.button {
+  position: relative;
+  padding: 5px 10px;
+    font-size: 20px;
+    min-width: 45px;
+	font-family: 'Poppins', sans-serif;
+  background: var(--btn-color);
+  text-decoration: none;
+  color: var(--btn-text-color);
+  border-radius: 6px;
+  left: 15px;
+  cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.button:hover {
+  position: relative;
+  padding: 5px 10px;
+    font-size: 24px;
+    min-width: 45px;
+	font-family: 'Poppins', sans-serif;
+  background: var(--btn-text-color);
+  text-decoration: none;
+  color: var(--btn-color);
+  border-radius: 6px;
+  cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+
+.button2 {
+  position: relative;
+  padding: 5px 10px;
+    font-size: 12px;
+    min-width: 45px;
+	font-family: 'Poppins', sans-serif;
+  background: var(--btn-color);
+  text-decoration: none;
+  color: var(--btn-text-color);
+  border-radius: 6px;
+  left: 15px;
+  cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.button2:hover {
+  position: relative;
+  padding: 5px 10px;
+    font-size: 12px;
+    min-width: 45px;
+	font-family: 'Poppins', sans-serif;
+  background: var(--btn-text-color);
+  text-decoration: none;
+  color: var(--btn-color);
+  border-radius: 6px;
+  cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+
+
+/*================ UPTIME ===================*/
+
+
+#clock-box, #info {
+      grid-column: span 3;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+}
+
+#clock-box #clock {
+      grid-column: 4 / 10;
+      background-color: #F8C8C8;
+      padding: .6rem 2rem;
+      padding-top: .8rem;
+      text-align: center;
+      font-size: 2.4rem;
+      border-radius: 10rem;
+}
+
+date, time {
+      display: block;
+}
+
+/*==============================================*/
+
+
+
+:root{
+    /* ===== Colors ===== */
+    --primary-color: #0E4BF1;
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #4DA3FF;
+    --box2-color: #FFE6AC;
+    --box3-color: #E7D1FC;
+    --title-icon-color: #fff;
+	
+	/*============ BUTTON ===============*/
+	
+	--btn-color: #0E4BF1;
+	--btn-text-color: #FFF;
+    
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+body.dark{
+    --primary-color: #3A3B3C;
+    --panel-color: #242526;
+    --text-color: #CCC;
+    --black-light-color: #CCC;
+    --border-color: #4D4C4C;
+    --toggle-color: #FFF;
+    --box1-color: #3A3B3C;
+    --box2-color: #3A3B3C;
+    --box3-color: #3A3B3C;
+    --title-icon-color: #CCC;
+	
+	/*============ BUTTON ===============*/
+	
+	--btn-color: #4d4c4c;
+	--btn-text-color: #fff;
+	
+}
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 8px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0b3cc1;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+body.dark::-webkit-scrollbar-thumb:hover,
+body.dark .activity-data::-webkit-scrollbar-thumb:hover{
+    background: #3A3B3C;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background-color: var(--panel-color);
+    border-right: 1px solid var(--border-color);
+    transition: var(--tran-05);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav.close{
+    width: 73px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav .logo-name{
+    display: flex;
+    align-items: center;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav .logo-image{
+    display: flex;
+    justify-content: center;
+    min-width: 45px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav .logo-image img{
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+nav .logo-name .logo_name{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 14px;
+    transition: var(--tran-05);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav.close .logo_name{
+    opacity: 0;
+    pointer-events: none;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav .menu-items{
+    margin-top: 40px;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.menu-items li{
+    list-style: none;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.menu-items li a{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    position: relative;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.nav-links li a:hover:before{
+    content: "";
+    position: absolute;
+    left: -7px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+body.dark li a:hover:before{
+    background-color: var(--text-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.menu-items li a i{
+    font-size: 24px;
+    min-width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-light-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.menu-items li a .link-name{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-light-color);    
+    transition: var(--tran-05);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav.close li a .link-name{
+    opacity: 0;
+    pointer-events: none;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.nav-links li a:hover i,
+.nav-links li a:hover .link-name{
+    color: var(--primary-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+body.dark .nav-links li a:hover i,
+body.dark .nav-links li a:hover .link-name{
+    color: var(--text-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.menu-items .logout-mode{
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.menu-items .mode{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.menu-items .mode-toggle{
+    position: absolute;
+    right: 14px;
+    height: 50px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.mode-toggle .switch{
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: var(--toggle-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.switch:before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-color: var(--panel-color);
+    border-radius: 50%;
+    transition: var(--tran-03);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+body.dark .switch:before{
+    left: 20px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+.dashboard{
+    position: relative;
+    left: 250px;
+    background-color: var(--panel-color);
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    transition: var(--tran-05);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav.close ~ .dashboard{
+    left: 73px;
+    width: calc(100% - 73px);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dashboard .top{
+    position: fixed;
+    top: 0;
+    left: 250px;
+    display: flex;
+    width: calc(100% - 250px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: var(--panel-color);
+    transition: var(--tran-05);
+    z-index: 10;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+nav.close ~ .dashboard .top{
+    left: 73px;
+    width: calc(100% - 73px);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dashboard .top .sidebar-toggle{
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dashboard .top .search-box{
+    position: relative;
+    height: 45px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 30px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.top .search-box input{
+    position: absolute;
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+    padding: 0 25px 0 50px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.top .search-box i{
+    position: absolute;
+    left: 15px;
+    font-size: 22px;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--black-light-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.top img{
+    width: 40px;
+    border-radius: 50%;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dashboard .dash-content{
+    padding-top: 50px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dash-content .title{
+    display: flex;
+    align-items: center;
+    margin: 60px 0 30px 0;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dash-content .title i{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: var(--title-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dash-content .title .text{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 10px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dash-content .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dash-content .boxes .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 15px);
+    padding: 15px 20px;
+    background-color: var(--box1-color);
+    transition: var(--tran-05);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.boxes .box i{
+    font-size: 35px;
+    color: var(--text-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.boxes .box .text{
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.boxes .box .number{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.boxes .box.box2{
+    background-color: var(--box2-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.boxes .box.box3{
+    background-color: var(--box3-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.dash-content .activity .activity-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.activity .activity-data{
+    display: flex;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.activity-data .data{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.activity-data .data-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+.activity-data .data .data-list{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    white-space: nowrap;
+    color: var(--text-color);
+	cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+}
+
+@media (max-width: 1000px) {
+    nav{
+        width: 73px;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close{
+        width: 250px;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav .logo_name{
+        opacity: 0;
+        pointer-events: none;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close .logo_name{
+        opacity: 1;
+        pointer-events: auto;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav li a .link-name{
+        opacity: 0;
+        pointer-events: none;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close li a .link-name{
+        opacity: 1;
+        pointer-events: auto;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav ~ .dashboard{
+        left: 73px;
+        width: calc(100% - 73px);
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close ~ .dashboard{
+        left: 250px;
+        width: calc(100% - 250px);
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav ~ .dashboard .top{
+        left: 73px;
+        width: calc(100% - 73px);
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close ~ .dashboard .top{
+        left: 250px;
+        width: calc(100% - 250px);
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    .activity .activity-data{
+        overflow-X: scroll;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+}
+
+@media (max-width: 780px) {
+    .dash-content .boxes .box{
+        width: calc(100% / 2 - 15px);
+        margin-top: 15px;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+}
+@media (max-width: 560px) {
+    .dash-content .boxes .box{
+        width: 100% ;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+}
+@media (max-width: 400px) {
+    nav{
+        width: 0px;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close{
+        width: 73px;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav .logo_name{
+        opacity: 0;
+        pointer-events: none;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close .logo_name{
+        opacity: 0;
+        pointer-events: none;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav li a .link-name{
+        opacity: 0;
+        pointer-events: none;
+		
+    }
+    nav.close li a .link-name{
+        opacity: 0;
+        pointer-events: none;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav ~ .dashboard{
+        left: 0;
+        width: 100%;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close ~ .dashboard{
+        left: 73px;
+        width: calc(100% - 73px);
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav ~ .dashboard .top{
+        left: 0;
+        width: 100%;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+    nav.close ~ .dashboard .top{
+        left: 0;
+        width: 100%;
+		cursor: url("https://i.imgur.com/5v5M8gh.png"), auto;
+    }
+}
